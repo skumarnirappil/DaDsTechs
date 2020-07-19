@@ -639,9 +639,44 @@ section {
 /* read more*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-.text{
+#text{
   display:none;
   }
+ #text1{
+    display:none;
+    }
+#text2{
+  display:none;
+  }
+#text3{
+    display:none;
+    }
+#text4{
+      display:none;
+  }
+#text5{
+    display:none;
+    }
+#text6{
+      display:none;
+      }
+      
+#text7{
+display:none;
+        }
+ #text8{
+  display:none;
+          }    
+ #text9{
+  display:none;
+            }       
+#text10{
+  display:none;
+              }   
+ #text11{
+  display:none;
+                }                      
+            
 
 
 .btn-container{
@@ -719,6 +754,241 @@ font-size: 30px;
 .services .icon-box:hover .icon i {
   color: #fff;
 }
+
+
+
+
+/*--------------------------------------------------------------
+# Request for Services
+--------------------------------------------------------------*/
+.pvcy-stmt {
+  color: #000;
+  margin-left: 2px;
+  text-decoration: underline;
+}
+
+.pvcy-stmt:hover {
+  color: #000000;
+}
+
+
+
+
+.field-bg form {
+	width: 100%;
+}
+.field-bg input:focus ~ .bar:before, .field-bg input:focus ~ .bar:after {
+	width: 100%;
+}
+.field-bg textarea:focus ~ .bar:before, .field-bg textarea:focus ~ .bar:after {
+	width: 100%;
+}
+.field-bg input:focus ~ label {
+	top: -20px;
+	font-size: 14px;
+	color: #999;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+.field-bg textarea:focus ~ label {
+	top: -20px;
+	font-size: 14px;
+	color: #999;
+	background-color: transparent;
+	text-transform: uppercase;
+}
+
+.field-bg input:not([value=""]):not(:focus) ~ label {
+	top: -20px;
+}
+.field-bg input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ opacity: 1;
+ font-size: 14px !important;
+ color: #777;
+}
+.field-bg input:focus::-moz-placeholder { /* Firefox 19+ */
+ opacity: 1;
+ font-size: 14px !important;
+ color: #777;
+}
+.field-bg input:focus:-ms-input-placeholder { /* IE 10+ */
+ opacity: 1;
+ font-size: 14px !important;
+ color: #777;
+}
+.field-bg input:focus:-moz-placeholder { /* Firefox 18- */
+ opacity: 1;
+ font-size: 14px !important;
+ color: #777;
+}
+.field-bg input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ opacity: 0;
+}
+.field-bg input::-moz-placeholder { /* Firefox 19+ */
+ opacity: 0;
+}
+.field-bg input:-ms-input-placeholder { /* IE 10+ */
+color: transparent;
+}
+.field-bg input:-moz-placeholder { /* Firefox 18- */
+ opacity: 0;
+}
+.field-bg input:focus, .field-bg textarea:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+.h2-heading {
+	font-size: 50px;
+	line-height: 50px;
+}
+#connected_with_us {
+	background:aqua ;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+}
+.cmp-form-text {
+	width: 100%;
+}
+.submit-btn {
+	padding: 15px 50px;
+}
+}
+
+@media screen and (max-width: 992px) {
+.txt-request {
+	font-size: 20px;
+	line-height: 25px;
+}
+}
+
+@media screen and (max-width: 900px) {
+.field-bg {
+	margin-right: 0px;
+}
+.mb-xs-50 {
+	margin-bottom: 50px;
+}
+.h2-heading {
+	font-size: 40px;
+	line-height: 40px;
+}
+#connected_with_us {
+	background:none 
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+}
+.cmp-form-text {
+	width: 100%;
+}
+
+
+/*styles coming from rfs-form.css:-*/
+
+
+
+ /*Lates from another rf-form mockups:-*/
+
+  
+
+.form-switch{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 5px;
+	-webkit-tap-highlight-color: transparent;
+	float: left;
+	padding-bottom: 18px;
+	margin-right: 10px;
+}
+
+.form-switch i {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 23px;
+	display: inline-block;
+	margin-right: 0.2rem;
+	position: relative;
+	transition: all 0.3s linear 0s;
+	vertical-align: text-bottom;
+	height: 22px !important;
+	width: 40px !important;
+}
+.form-switch i:before {
+	background-color: rgba(0, 0, 0, 0.17);
+	border-radius: 11px;
+	content: "";
+	left: 0;
+	position: absolute;
+	transform: translate3d(2px, 2px, 0px) scale3d(1, 1, 1);
+	transition: all 0.25s linear 0s;
+	height: 18px !important;
+	width: 36px !important;
+}
+.form-switch i:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	background-color: #fff;
+	border-radius: 11px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+	transform: translate3d(2px, 2px, 0);
+	transition: all 0.2s ease-in-out;
+	width: 18px !important;
+	height: 18px !important;
+}
+.form-switch:active i:after {
+	width: 28px;
+	transform: translate3d(2px, 2px, 0);
+}
+.form-switch:active input:checked + i::after {
+	transform: translate3d(16px, 2px, 0);
+}
+.form-switch input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+.form-switch input:checked + i {
+	background-color: #4BD763;
+}
+.form-switch input:checked + i:before {
+	transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+.form-switch input:checked + i::after {
+	transform: translate3d(22px, 2px, 0);
+}
+#lineheight {
+	vertical-align: 4px;
+}
+#connected_with_us #lineheight {
+	color : #ffffff !important;
+}
+
+
+.form-width {
+	width: 100%;
+}
+.form-table {
+	/*display:inline-block; */
+	float: left;
+	width: 50%;
+}
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Counts
