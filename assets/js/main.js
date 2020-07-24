@@ -8,7 +8,7 @@
   "use strict";
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  var scrolltoOffset = $('#header').outerHeight()
+  var scrolltoOffset = $('#header-1').outerHeight()
   if (window.matchMedia("(max-width: 991px)").matches) {
     scrolltoOffset += 30;
   }
@@ -19,7 +19,7 @@
       if (target.length) {
 
         var scrollto = target.offset().top - scrolltoOffset;
-        if ($(this).attr("href") == '#header') {
+        if ($(this).attr("href") == '#header-1') {
           scrollto = 0;
         }
         $('html, body').animate({
@@ -310,13 +310,13 @@
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
+      $('#header-1').addClass('header-scrolled');
     } else {
-      $('#header').removeClass('header-scrolled');
+      $('#header-1').removeClass('header-scrolled');
     }
   });
   if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
+    $('#header-1').addClass('header-scrolled');
   }
 
   // Back to top button
@@ -402,3 +402,7 @@
 })(jQuery);
 
 // Request for Services
+
+
+// WhatsApp
+
