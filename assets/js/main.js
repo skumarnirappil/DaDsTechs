@@ -52,228 +52,195 @@
     }
   });
 
-  // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
-    $('body').append('<div class="mobile-nav-overly"></div>');
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-      $('.mobile-nav-overly').toggle();
-    });
-    $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
-      e.preventDefault();
-      $(this).next().slideToggle(300);
-      $(this).parent().toggleClass('active');
-    });
-    $(document).click(function(e) {
-      var container = $(".mobile-nav, .mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-      }
-    });
-  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-    $(".mobile-nav, .mobile-nav-toggle").hide();
-  }
-  // Readmore
-  $(document).ready(function() {
-    $("#toggle").click(function() {
-      var elem = $("#toggle").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle").text("Read Less");
-        $("#text").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle").text("Read More");
-        $("#text").slideUp();
-      }
-    });
+  
+  
+// Readmore
+$(document).ready(function() {
+  $("#toggle").click(function() {
+    var elem = $("#toggle").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Read Less");
+      $("#text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Read More");
+      $("#text").slideUp();
+    }
   });
+});
 
-
-  $(document).ready(function() {
-    $("#toggle1").click(function() {
-      var elem = $("#toggle1").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle1").text("Read Less");
-        $("#text1").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle1").text("Read More");
-        $("#text1").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle1").click(function() {
+    var elem = $("#toggle1").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle1").text("Read Less");
+      $("#text1").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle1").text("Read More");
+      $("#text1").slideUp();
+    }
   });
+});
 
-  $(document).ready(function() {
-    $("#toggle2").click(function() {
-      var elem = $("#toggle2").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle2").text("Read Less");
-        $("#text2").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle2").text("Read More");
-        $("#text2").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle2").click(function() {
+    var elem = $("#toggle2").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle2").text("Read Less");
+      $("#text2").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle2").text("Read More");
+      $("#text2").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle3").click(function() {
-      var elem = $("#toggle3").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle3").text("Read Less");
-        $("#text3").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle3").text("Read More");
-        $("#text3").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle3").click(function() {
+    var elem = $("#toggle3").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle3").text("Read Less");
+      $("#text3").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle3").text("Read More");
+      $("#text3").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle4").click(function() {
-      var elem = $("#toggle4").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle4").text("Read Less");
-        $("#text4").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle4").text("Read More");
-        $("#text4").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle4").click(function() {
+    var elem = $("#toggle4").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle4").text("Read Less");
+      $("#text4").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle4").text("Read More");
+      $("#text4").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle5").click(function() {
-      var elem = $("#toggle5").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle5").text("Read Less");
-        $("#text5").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle5").text("Read More");
-        $("#text5").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle5").click(function() {
+    var elem = $("#toggle5").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle5").text("Read Less");
+      $("#text5").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle5").text("Read More");
+      $("#text5").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle6").click(function() {
-      var elem = $("#toggle6").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle6").text("Read Less");
-        $("#text6").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle6").text("Read More");
-        $("#text6").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle6").click(function() {
+    var elem = $("#toggle6").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle6").text("Read Less");
+      $("#text6").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle6").text("Read More");
+      $("#text6").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle7").click(function() {
-      var elem = $("#toggle7").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle7").text("Read Less");
-        $("#text7").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle7").text("Read More");
-        $("#text7").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle7").click(function() {
+    var elem = $("#toggle7").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle7").text("Read Less");
+      $("#text7").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle7").text("Read More");
+      $("#text7").slideUp();
+    }
   });
+});
 
-  $(document).ready(function() {
-    $("#toggle8").click(function() {
-      var elem = $("#toggle8").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle8").text("Read Less");
-        $("#text8").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle8").text("Read More");
-        $("#text8").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle8").click(function() {
+    var elem = $("#toggle8").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle8").text("Read Less");
+      $("#text8").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle8").text("Read More");
+      $("#text8").slideUp();
+    }
   });
+});
 
-  $(document).ready(function() {
-    $("#toggle9").click(function() {
-      var elem = $("#toggle9").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle9").text("Read Less");
-        $("#text9").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle9").text("Read More");
-        $("#text9").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle9").click(function() {
+    var elem = $("#toggle9").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle9").text("Read Less");
+      $("#text9").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle9").text("Read More");
+      $("#text9").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle10").click(function() {
-      var elem = $("#toggle10").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle10").text("Read Less");
-        $("#text10").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle10").text("Read More");
-        $("#text10").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle10").click(function() {
+    var elem = $("#toggle10").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle10").text("Read Less");
+      $("#text10").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle10").text("Read More");
+      $("#text10").slideUp();
+    }
   });
+});
 
 
-  $(document).ready(function() {
-    $("#toggle11").click(function() {
-      var elem = $("#toggle11").text();
-      if (elem == "Read More") {
-        //Stuff to do when btn is in the read more state
-        $("#toggle11").text("Read Less");
-        $("#text11").slideDown();
-      } else {
-        //Stuff to do when btn is in the read less state
-        $("#toggle11").text("Read More");
-        $("#text11").slideUp();
-      }
-    });
+$(document).ready(function() {
+  $("#toggle11").click(function() {
+    var elem = $("#toggle11").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle11").text("Read Less");
+      $("#text11").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle11").text("Read More");
+      $("#text11").slideUp();
+    }
   });
-
-
-
+});
 
 
 
@@ -310,14 +277,12 @@
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#header-1').addClass('header-scrolled');
+      $('#headermain').addClass('header-scrolled');
     } else {
-      $('#header-1').removeClass('header-scrolled');
+      $('#headermain').removeClass('header-scrolled');
     }
   });
-  if ($(window).scrollTop() > 100) {
-    $('#header-1').addClass('header-scrolled');
-  }
+ 
 
   // Back to top button
   $(window).scroll(function() {
