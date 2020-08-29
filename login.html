@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style type="text/css">
+
+     body{
+
+font-weight: bold;
+color: white
+}
+
+button{
+
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: white;
+
+}
+
+table{
+background-color: #40c3d3;
+padding-left:150px;
+padding-right:150px;
+padding-top:120px;
+padding-bottom:120px;
+margin-left: 33%;
+margin-top: 25%;
+
+}
+
+span{
+color: red;
+display: none;
+}
+</style>
+<script>
+function validate(){
+var username=document.getElementById("UserName1").value.trim();
+var Password1=document.getElementById("Password1").value.trim();
+    usernameError=document.getElementById("usernameError")
+    passwordError=document.getElementById("passwordError")
+if(username==""&&username.length==0){
+    usernameError.style.display="inline-block";
+    document.getElementById("UserName1").focus();
+    return false;
+}
+if (Password1==""&&Password1.length==0 ){
+    passwordError.style.display="inline-block"
+    document.getElementById("Password1").focus();
+    return false;
+
+}
+usernameError.style.display="none";
+passwordError.style.display="none";
+document.forms[0].submit();
+return true;
+
+}
+
+</script>""
+
+</head>
+<body >
+ 
+   
+    <div class="login-form-wrapper">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 margin-auto">
+  <form autocomplete="on" action='/Login'  method="POST" >
+    <div class="form-group">
+        <table>
+        <tr>
+            <td> <label for="UserName1">UserName</label></td>
+            <td><input type="text" name="username" id="UserName1" class="form-control" placeholder="UserName" autocomplete="off" ><span id="usernameError">X</span></td>
+        </tr>
+        <tr>
+            <td><label for="Password1">Password</label></td>
+            <td><input type="password" name="password" id="Password1" class="form-control"placeholder="Password" autocomplete="off"><span id="passwordError">X</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="button" onclick="validate()" class="btn btn-primary">Sign in</button></td>
+            
+        </tr>
+        <tr> <td> <a class="dropdown-item" href="#">New here? Sign up</a></td> 
+        
+       
+            <td><a class="dropdown-item" href="#">Forgot password?</a> </td>
+        </tr>
+        </table> 
+</div>
+</form>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+class="px-4 py-3"
